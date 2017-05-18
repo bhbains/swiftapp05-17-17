@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -41,24 +41,48 @@
                                     <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4MA-e0-mPO"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efT-20-7Op">
+                                <rect key="frame" x="137.5" y="266" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Iro-gb-jU0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-kQ-CMU">
+                                <rect key="frame" x="137.5" y="214" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bCH-VG-WVG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bpr-zD-7bA" firstAttribute="top" secondItem="r9d-rU-CRQ" secondAttribute="bottom" constant="189" id="052-qq-xL1"/>
+                            <constraint firstItem="lVv-kQ-CMU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="33G-uU-bvq"/>
                             <constraint firstItem="r9d-rU-CRQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ym-AO-blZ"/>
                             <constraint firstItem="bpr-zD-7bA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="300" id="HYI-Wk-1Ei"/>
                             <constraint firstItem="wQZ-6r-ihv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zyr-VH-wF4"/>
+                            <constraint firstItem="efT-20-7Op" firstAttribute="top" secondItem="r9d-rU-CRQ" secondAttribute="bottom" constant="135" id="bj8-TL-NMP"/>
                             <constraint firstItem="wQZ-6r-ihv" firstAttribute="top" secondItem="bpr-zD-7bA" secondAttribute="bottom" constant="203.5" id="fUw-AW-Mdk"/>
+                            <constraint firstItem="efT-20-7Op" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbr-3k-SG1"/>
+                            <constraint firstItem="lVv-kQ-CMU" firstAttribute="top" secondItem="r9d-rU-CRQ" secondAttribute="bottom" constant="83" id="rfP-Zf-XNr"/>
                             <constraint firstItem="bpr-zD-7bA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uW3-Td-d1y"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="lVv-kQ-CMU" id="U7Q-rC-Uv3"/>
+                        <outlet property="text2" destination="efT-20-7Op" id="r55-uu-K8R"/>
                         <outlet property="theLabel" destination="bpr-zD-7bA" id="aI5-Af-O0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-810" y="95"/>
         </scene>
     </scenes>
 </document>
